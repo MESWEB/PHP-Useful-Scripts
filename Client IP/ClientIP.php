@@ -12,7 +12,8 @@ $clientIP = $_SERVER['HTTP_CLIENT_IP']
     ?? '0.0.0.0';
 
 # Earlier than PHP7
-/*$clientIP = '0.0.0.0';
+/*
+$clientIP = '0.0.0.0';
 
 if (isset($_SERVER['HTTP_CLIENT_IP'])) {
     $clientIP = $_SERVER['HTTP_CLIENT_IP'];
@@ -30,6 +31,6 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])) {
 } elseif (isset($_SERVER['REMOTE_ADDR'])) {
     $clientIP = $_SERVER['REMOTE_ADDR'];
 }
+*/
 
 echo "My client IP: ", $clientIP;
-*/
